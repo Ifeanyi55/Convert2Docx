@@ -1,0 +1,13 @@
+Package: Convert2Docx
+Type: Package
+Title: Convert2Docx
+Version: 0.1.0
+Author: Ifeanyi Idiaye
+Maintainer: Ifeanyi Idiaye <idiayeifeanyi@yahoo.com>
+Description: The {Convert2Docx} package converts pdf files to docx files.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    reticulate
+RoxygenNote: 7.1.2
