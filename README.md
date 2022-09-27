@@ -1,4 +1,4 @@
-# Convert2Docx R Package ![Image1](convert2docx2.jpg)
+# Convert2Docx R Package ![Image1](convert2docxB.jpg)
 
 The `{Convert2Docx}` package is essentially an R wrapper for the Python 'pdf2docx' module. It is easy to get started with the package.
 
