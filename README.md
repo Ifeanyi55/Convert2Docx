@@ -26,5 +26,5 @@ You can select specific pages in the pdf file you wish to convert to a docx file
 
 ![Image4](convert3.png)
 
-The package is light and easy to use, but if you do encounter any problems, kindly raise an issue and I will endeavor to address it. Enjoy!
+The package is light and easy to use, but if you encounter any problems, kindly raise an issue and I will endeavor to address it. Enjoy!
 
