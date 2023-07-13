@@ -8,8 +8,6 @@ After that is done, in order to use the package functions, you will need to inst
 
 Please note that the converted `docx` file will be automatically downloaded to your working directory. 
 
-It is good to mention here that since the software is built on top of Python, you should use Python indexing method when selecting page numbers. In Python, indexing starts from 0, whereas in R it starts from 1.
-
 Also, it is good to be aware that the pages of some pdf files are not correctly numbered. Therefore, when the conversion to docx is done, especially when converting selected pages, you might find that the page numbering is slightly different from what you are expecting. However, this "problem" does not occur when you convert the entire document to docx.
 
 Let's now see some examples:
