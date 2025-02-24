@@ -1,34 +1,66 @@
-# Convert2Docx R Package 
+# Convert2Docx R Package
 
-![Image1](convert2docxB.jpg)
+[![Image1](convert2docxB.jpg)](convert2docxB.jpg)
 
-The `{Convert2Docx}` package is essentially an R wrapper for the Python 'pdf2docx' module. It is easy to get started with the package.
+The `{Convert2Docx}` package provides an R interface to the Python `pdf2docx` module, simplifying the conversion of PDF files to DOCX format. It's designed to be easy to use, even for those unfamiliar with Python.
 
-First, you will need to install the package from github by running `devtools::install_github("Ifeanyi55/Convert2Docx")`. 
+## Installation
 
-After that is done, in order to use the package functions, you will need to install the conversion engine, by running `install_engine()` once. If you encounter any installation issue, please run in your terminal `pip install pdf2docx` and then try again. That should fix any issue.
+1.  **Install the R package:**
 
-Please note that the converted `docx` file will be automatically downloaded to your working directory. 
+    ```R
+    devtools::install_github("Ifeanyi55/Convert2Docx")
+    ```
 
-Also, it is good to be aware that the pages of some pdf files are not correctly numbered. Therefore, when the conversion to docx is done, especially when converting selected pages, you might find that the page numbering is slightly different from what you are expecting. However, this "problem" does not occur when you convert the entire document to docx.
+2.  **Install the conversion engine (pdf2docx):**  This step is crucial for the package to function.  Run the following command *once*:
 
-Let's now see some examples:
+    ```R
+    Convert2Docx::install_engine()
+    ```
 
-### Convert entire pdf file to docx
+    *If you encounter installation issues*, try installing `pdf2docx` directly using `pip` in your terminal, then retry `install_engine()`:
 
-You would notice that you do not need to read in the pdf file in your script. The only thing you need to do is to just specify the path and pass that to the `Converter()` function.
-![Image2](convert1.png)
+    ```bash
+    pip install pdf2docx
+    ```
 
-### Convert from one page to another
+    This can resolve dependency problems.
 
-Here, you can choose from which page you want the conversion to start and at which page you want it to end by using the `startANDend()` function
-![Image3](convert2.png)
+## Usage
 
-### Convert selected pages
+The converted `.docx` file will be automatically saved to your current working directory.
 
-You can select specific pages in the pdf file you wish to convert to a docx file by passing a numeric vector of the pages to the `pages` argument in the `selectPages()` function.
+**Important Note:**  While the package strives for accuracy, some PDF files may have incorrectly numbered pages.  When converting *selected* pages, verify that the page numbers in the resulting DOCX file match your expectations. Converting the entire document usually avoids this issue.
 
-![Image4](convert3.png)
+Here are some examples of how to use the package:
 
-The package is light and easy to use, but if you encounter any problems, kindly raise an issue and I will endeavor to address it. Enjoy!
+### Convert an Entire PDF File to DOCX
 
+You don't need to explicitly read the PDF file into your R script. Simply provide the file path to the `Converter()` function:
+
+```R
+Convert2Docx::Converter(pdf_path = "path/to/your/document.pdf")
+```
+
+### Convert a Range of Pages
+
+Use the `startANDend()` function to specify the starting and ending pages for the conversion:
+
+```R
+Convert2Docx::startANDend(pdf_path = "path/to/your/document.pdf",
+                         start_page = 3,
+                         end_page = 7)
+```
+
+### Convert Specific Pages
+
+Use the `selectPages()` function and provide a numeric vector of the pages you want to convert:
+
+```R
+Convert2Docx::selectPages(pdf_path = "path/to/your/document.pdf",
+                         pages = c(1, 3, 5, 8))
+```
+
+## Troubleshooting and Support
+
+This package aims to be user-friendly. If you encounter any issues or have suggestions for improvement, please open an issue on the [GitHub repository](https://github.com/Ifeanyi55/Convert2Docx).  We'll do our best to assist you.  Happy converting!
