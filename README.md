@@ -2,6 +2,8 @@
 
 [![GitHub Repo stars](https://img.shields.io/github/stars/Ifeanyi55/Convert2Docx?style=social)](https://github.com/Ifeanyi55/Convert2Docx/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/Ifeanyi55/Convert2Docx)](https://github.com/Ifeanyi55/Convert2Docx/issues)
+[![Last Commit](https://img.shields.io/github/last-commit/Ifeanyi55/Convert2Docx)](https://github.com/Ifeanyi55/Convert2Docx/commits/main)
+
 
 [![Image1](convert2docxC.jpg)](convert2docxC.jpg)
 
