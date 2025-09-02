@@ -2,6 +2,9 @@
 
 [![Image1](convert2docxC.jpg)](convert2docxC.jpg)
 
+[![GitHub Repo stars](https://img.shields.io/github/stars/Ifeanyi55/Convert2Docx?style=social)](https://github.com/Ifeanyi55/Convert2Docx/stargazers)
+[![GitHub issues](https://img.shields.io/github/issues/Ifeanyi55/Convert2Docx)](https://github.com/Ifeanyi55/Convert2Docx/issues)
+
 The `{Convert2Docx}` package provides an R interface to the Python `pdf2docx` module, simplifying the conversion of PDF files to DOCX format. It's designed to be easy to use, even for those unfamiliar with Python.
 
 ## Installation
