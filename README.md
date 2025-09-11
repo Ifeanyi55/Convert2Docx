@@ -1,11 +1,12 @@
-# Convert2Docx R Package
-
 [![GitHub Repo stars](https://img.shields.io/github/stars/Ifeanyi55/Convert2Docx?style=social)](https://github.com/Ifeanyi55/Convert2Docx/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/Ifeanyi55/Convert2Docx)](https://github.com/Ifeanyi55/Convert2Docx/issues)
 [![Last Commit](https://img.shields.io/github/last-commit/Ifeanyi55/Convert2Docx)](https://github.com/Ifeanyi55/Convert2Docx/commits/main)
 [![License](https://img.shields.io/github/license/Ifeanyi55/Convert2Docx)](./LICENSE)
 [![CodeFactor](https://www.codefactor.io/repository/github/ifeanyi55/convert2docx/badge)](https://www.codefactor.io/repository/github/ifeanyi55/convert2docx)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Ifeanyi55/Convert2Docx)
+
+
+# Convert2Docx R Package
 
 
 [![Image1](convert2docxC.jpg)](convert2docxC.jpg)
