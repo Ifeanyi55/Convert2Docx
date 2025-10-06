@@ -6,6 +6,6 @@
 #' @export
 #'
 #' @examples install_engine()
-install_engine <- function(){
-  reticulate::py_install("pdf2docx",pip = T)
+install_engine <- function() {
+  reticulate::py_install("pdf2docx", pip = T)
 }

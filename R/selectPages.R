@@ -9,15 +9,18 @@
 #' @return Converted docx file stored in the working directory
 #' @export
 #'
-#' @examples selectPages(pdf_file = "doc.pdf",
-#'             docx_filename = "selected.docx",
-#'             pages = c(10,15,20))
-selectPages <- function(pdf_file,docx_filename,pages){
+#' @examples selectPages(
+#'   pdf_file = "doc.pdf",
+#'   docx_filename = "selected.docx",
+#'   pages = c(10, 15, 20)
+#' )
+selectPages <- function(pdf_file, docx_filename, pages) {
   # import module
-  converter <- reticulate::import('pdf2docx')
+  converter <- reticulate::import("pdf2docx")
   # parse the name of the pdf file, the docx file, and selected pages
-  converter$parse(pdf_file = pdf_file,
-                  docx_file = docx_filename,
-                  pages = pages)
+  converter$parse(
+    pdf_file = pdf_file,
+    docx_file = docx_filename,
+    pages = pages
+  )
 }
-

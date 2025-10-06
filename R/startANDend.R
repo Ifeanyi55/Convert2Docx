@@ -10,17 +10,20 @@
 #' @return Converted docx file stored in the working directory
 #' @export
 #'
-#' @examples startANDend(pdf_file = "doc.pdf",
-#'             docx_filename = pages.docx,
-#'             start = 10,
-#'             end = 20)
-startANDend <- function(pdf_file,docx_filename,start,end){
+#' @examples startANDend(
+#'   pdf_file = "doc.pdf",
+#'   docx_filename = pages.docx,
+#'   start = 10,
+#'   end = 20
+#' )
+startANDend <- function(pdf_file, docx_filename, start, end) {
   # import module
-  converter <- reticulate::import('pdf2docx')
+  converter <- reticulate::import("pdf2docx")
   # parse the name of the pdf file, the docx file, and start and end pages
-  converter$parse(pdf_file = pdf_file,
-                  docx_file = docx_filename,
-                  start = start,
-                  end = end)
+  converter$parse(
+    pdf_file = pdf_file,
+    docx_file = docx_filename,
+    start = start,
+    end = end
+  )
 }
-
