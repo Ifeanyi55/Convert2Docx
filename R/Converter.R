@@ -8,12 +8,13 @@
 #' @return Converted docx file stored in the working directory
 #' @export
 #'
-#' @examples Converter(pdf_file = "doc.pdf",docx_filename = "newdoc.docx")
-Converter <- function(pdf_file,docx_filename){
+#' @examples Converter(pdf_file = "doc.pdf", docx_filename = "newdoc.docx")
+Converter <- function(pdf_file, docx_filename) {
   # import module
-  converter <- reticulate::import('pdf2docx')
+  converter <- reticulate::import("pdf2docx")
   # parse the name of the pdf file and the docx file
-  converter$parse(pdf_file = pdf_file,
-                  docx_file = docx_filename)
+  converter$parse(
+    pdf_file = pdf_file,
+    docx_file = docx_filename
+  )
 }
-
