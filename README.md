@@ -3,6 +3,8 @@
 [![Last Commit](https://img.shields.io/github/last-commit/Ifeanyi55/Convert2Docx)](https://github.com/Ifeanyi55/Convert2Docx/commits/main)
 [![License](https://img.shields.io/github/license/Ifeanyi55/Convert2Docx)](./LICENSE)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.svg?v=103)](https://github.com/Ifeanyi55/Convert2Docx)
+[![Build Status](https://github.com/Ifeanyi55/Convert2Docx/actions/workflows/R-CMD-check.yml/badge.svg)](https://github.com/Ifeanyi55/Convert2Docx/actions)
+
 
 
 # Convert2Docx R Package
